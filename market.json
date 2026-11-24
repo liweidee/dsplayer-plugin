@@ -49,46 +49,18 @@
     },
     {
       "id": "nodejs",
-      "name": "Node.js 运行时",
+      "name": "Node.js 兼容运行时",
       "author": "hjdhnx",
-      "desc": "Node.js 24 运行时（arm64 静态链接）。本身不启动服务，作为运行时供「服务」页引用：可同时拉起多个服务实例（如 drpy-node 源服务）。",
-      "version": "1.0.0",
+      "desc": "Node.js 18.20.4 兼容运行时，支持 arm64-v8a、armeabi-v7a、x86_64，供猫影视和其他 Node 服务使用。",
+      "version": "18.20.4-1",
       "type": "import",
-      "size": 31400000,
-      "url": "packages/nodejs-1.0.0.zip",
+      "size": 60034660,
+      "url": "packages/nodejs-18.20.4-universal.zip",
       "icon": "icons/nodejs.png",
-      "tags": [
-        "运行时",
-        "服务"
-      ],
-      "md5": "8eb71041327f883355a99e5c4a791388",
-      "platforms": [
-        "android"
-      ],
-      "category": "env"
-    },
-    {
-      "id": "nodejs-arm32",
-      "name": "Node.js 运行时（32 位设备）",
-      "author": "hjdhnx",
-      "desc": "Node.js 24 运行时的 32 位（armeabi-v7a）构建，供 32 位安卓设备/老电视使用——本身不启动服务，作为运行时供「服务」页引用（drpyS 源服务等）。与 64 位线同版本 v24.12.0，落盘目录与 64 位包同名（nodejs），服务引用零改动；64 位设备请装「Node.js 运行时」。",
-      "version": "1.0.0",
-      "type": "import",
-      "size": 30909747,
-      "url": "packages/nodejs-arm32-1.0.0.zip",
-      "icon": "icons/nodejs.png",
-      "tags": [
-        "运行时",
-        "服务"
-      ],
-      "md5": "15858ed3a3ad52ac61403f77d66e66f7",
-      "platforms": [
-        "android"
-      ],
-      "abis": [
-        "armeabi-v7a"
-      ],
-      "minApp": "1.1.11",
+      "tags": ["运行时", "服务"],
+      "md5": "d351c23657e2a61d3bf3499abaeddf2f",
+      "platforms": ["android"],
+      "abis": ["arm64-v8a", "armeabi-v7a", "x86_64"],
       "category": "env"
     },
     {
